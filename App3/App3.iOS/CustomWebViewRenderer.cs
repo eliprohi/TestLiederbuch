@@ -31,7 +31,7 @@ namespace App3.iOS
             if (e.NewElement != null)
             {
                 var customWebView = Element as CustomWebView;
-                string fileName = Path.Combine(NSBundle.MainBundle.BundlePath, string.Format("Content//Zionsharfe/{0}", WebUtility.UrlEncode(customWebView.Uri)));
+                string fileName = Path.Combine(NSBundle.MainBundle.BundlePath, string.Format("Content/{0}", WebUtility.UrlEncode(customWebView.Uri)));
                 Control.LoadRequest(new NSUrlRequest(new NSUrl(fileName, false)));
                 Control.ScalesPageToFit = true;
             }

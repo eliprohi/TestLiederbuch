@@ -8,29 +8,20 @@
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <!-- Place new controls here -->
-        <Label Text="Zionsharfe" 
+        <Label Text="Bücher" 
                HorizontalOptions="Center"
                VerticalOptions="Start"
                FontSize="Title"/>
-        
-        <Entry  x:Name="entryNumber"
-                Keyboard="Numeric"
-                Placeholder="Nummer"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                />
 
-        <Button x:Name = "btnSearch"
-                Clicked="btnSearch_Clicked"
-                Text="Suchen" 
-                HorizontalOptions="Center" 
-                VerticalOptions="Center"/>
+        <Button x:Name="btnMappe"
+                Text="Mappe"
+                Clicked="btnMappe_Clicked"
+        ></Button>
+        <Button x:Name="btnZionsharfe"
+                Text="Zionsharfe"
+                Clicked="btnZionsharfe_Clicked"
+        ></Button>
 
-        <Label x:Name="lblResult"
-               Text="Resultat"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"
-               IsVisible="False"/>
 
     </StackLayout>
 

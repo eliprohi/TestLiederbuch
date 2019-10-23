@@ -20,9 +20,17 @@ namespace App3
 
         private void btnSearch_Clicked(object sender, EventArgs e)
         {
-            lblResult.Text = entryNumber.Text;
-            var song = Int32.Parse(entryNumber.Text).ToString("000");
-            Navigation.PushAsync(new WebViewPage($"Z{song}.pdf"));
+            
+        }
+
+        private void btnMappe_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MappePage());
+        }
+
+        private void btnZionsharfe_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ZionsharfePage());
         }
     }
 }
